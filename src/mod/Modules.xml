@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Root>
+  <Module  name = "AgentMittens"
+    movie       = "AgentMittens\AgentMittens.swf"
+    flags       = ""
+    depth_layer = "Top"
+    sub_depth   = "2"
+    variable    = "AgentMittens"
+    criteria    = "AgentMittens &amp;&amp; (guimode &amp; (GUIMODEFLAGS_INPLAY | GUIMODEFLAGS_ENABLEALLGUI))"
+  />
+</Root>

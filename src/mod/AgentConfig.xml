@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+	id = Agents id(this file has all of them prefilled,more may need to be added as new agents get added).
+	name = Agents new name
+	species  = Agents new species
+	profession = Agents new profession
+	img = custom image name (placed in MittenRoster folder)
+	replace = 	replaces spesified string with the new name.
+				For example  <Agent id="2701" name="Catnip" replace="Lydia" />
+				would replace all occurances of "Lydia", in the agent description, with "Catnip"
+				This is only needed when changing agent names.
+		
+	Images can be placed on "MittenRoster" folder as png images, transparency should work.
+	Images should be 200x200 squares, although bigger images should work too, as long as you keep the aspect ratio.
+	Bigger images may load slower though.
+	
+	Some cat names you can use
+		Mittens
+		Muffin
+		Rusty
+		Max
+		Misty
+		Callie
+		Blacky
+		Zoe
+		Stripes
+		Whiskers
+		Pumpkin
+		Catnip
+		Bella
+		Coco
+		Tiger
+		Felix
+		Fluffy
+	
+	Current agent ID's
+		Jayesh Suresh 235
+		Nassir 175
+		Mihas Blaga 207
+		Roman Konstantinov 211
+		Martin Espina 217
+		Virgil 223
+		Lydia Darling 2701
+		Wekesa Ikande 2452
+		Liam Callahan 233
+		Wu Liang-Zhi 236
+		Lee Chung 240
+		Faction Recruit 264
+		Kwanele 2446
+		Hayden J. Montag 174
+		Petru 204
+		Aleksey Volkov 224
+		Dennis Masuhlo 2451
+		Siobhan Gowan 238
+		Lama Lhakpa 246
+		Ibrahim de la Fuente 221
+		Saenchai Khamsing 234
+		Carter 173
+		Aurélie 206
+		Carlos Peraza 213
+		Daniel Martinez 227
+		Cveta Stojanovic 230
+		Pierre Delacroix 245
+		Montgomery de la Roche 179
+		Amir 181
+		Calum MacLeod 212
+		Tiana Cardoza 218
+		Sarah Skelly 225
+		Queen Ranavalona IV 2453
+		Astrid Mikkelsen 239
+		Dax Reagan 242
+		Che Garcia Hansson 2441
+		Deputy Andy Gardener 113
+		Giovanni Bellanova 215
+		Mehmet Muzaffer 2449
+		Oleg Yablokov 2681
+		Thomas Grady 228
+		Alessandro Luzio IV 231
+		Terry Laputo 241
+		Victor Cromely 2467
+		Warlawurru 214
+		Aliya Zehhar 2456
+		Ann Thophora 2457
+		Maxwell Chandler 226
+		Christina Del Rio 229
+		Margot Crowley-Mathers 244
+		Mesilande Gwinyai 2468
+		Callie James 209
+
+-->
+<data>
+	<Agent id="113" img="113" name="" species="Cat" profession="" replace="" />
+	<Agent id="173" img="173" name="" species="Cat" profession="" replace="" />
+	<Agent id="174" img="174" name="" species="Cat" profession="" replace="" />
+	<Agent id="175" img="175" name="" species="Cat" profession="" replace="" />
+	<Agent id="179" img="179" name="" species="Red Panda" profession="" replace="" />
+	<Agent id="181" img="181" name="" species="Cat" profession="" replace="" />
+	<Agent id="204" img="204" name="" species="Cat" profession="" replace="" />
+	<Agent id="206" img="206"  name="" species="Sand Cat" profession="" replace="" />
+	<Agent id="207" img="207" name="" species="Cat" profession="" replace="" />
+	<Agent id="209" img="209" name="" species="Cat" profession="" replace="" />
+	<Agent id="211" img="211" name="" species="Cat" profession="" replace="" />
+	<Agent id="212" img="212" name="" species="Cat" profession="" replace="" />
+	<Agent id="213" img="213" name="" species="Cat" profession="" replace="" />
+	<Agent id="214" img="214" name="" species="Cat" profession="" replace="" />
+	<Agent id="215" img="215" name="" species="Cat" profession="" replace="" />
+	<Agent id="217" img="217" name="" species="Cat" profession="" replace="" />
+	<Agent id="218" img="218" name="" species="Cat" profession="" replace="" />
+	<Agent id="221" img="221" name="" species="Red Panda" profession="" replace="" />
+	<Agent id="223" img="223" name="" species="Dog" profession="" replace="" />
+	<Agent id="224" img="224" name="" species="Cat" profession="" replace="" />
+	<Agent id="225" img="225" name="" species="Cat" profession="" replace="" />
+	<Agent id="226" img="226" name="" species="Cat" profession="" replace="" />
+	<Agent id="227" img="227" name="" species="Cat" profession="" replace="" />
+	<Agent id="228" img="228" name="" species="Cat" profession="" replace="" />
+	<Agent id="229" img="229" name="" species="Cat" profession="" replace="" />
+	<Agent id="230" img="230" name="" species="Cat" profession="" replace="" />
+	<Agent id="231" img="231" name="" species="Cat" profession="" replace="" />
+	<Agent id="233" img="233" name="" species="Cat" profession="" replace="" />
+	<Agent id="234" img="234" name="" species="Cat" profession="" replace="" />
+	<Agent id="235" img="235" name="" species="Cat" profession="" replace="" />
+	<Agent id="236" img="236" name="" species="Cheetah" profession="" replace="" />
+	<Agent id="238" img="238" name="" species="Lion" profession="" replace="" />
+	<Agent id="239" img="239" name="" species="Cat" profession="" replace="" />
+	<Agent id="240" img="240" name="" species="Cat" profession="" replace="" />
+	<Agent id="241" img="241" name="" species="Cat" profession="" replace="" />
+	<Agent id="242" img="242" name="" species="Cat" profession="" replace="" />
+	<Agent id="244" img="244" name="" species="Cat" profession="" replace="" />
+	<Agent id="245" img="245" name="" species="Cat" profession="" replace="" />
+	<Agent id="246" img="246" name="" species="Cat" profession="" replace="" />
+	<Agent id="264" img="264" name="" species="Cat" profession="" replace="" />
+	<Agent id="2441" img="2441" name="" species="Cat" profession="" replace="" />
+	<Agent id="2446" img="2446" name="" species="Cheetah" profession="" replace="" />
+	<Agent id="2449" img="2449" name="" species="Cat" profession="" replace="" />
+	<Agent id="2451" img="2451" name="" species="Cat" profession="" replace="" />
+	<Agent id="2452" img="2452" name="" species="Fox" profession="" replace="" />
+	<Agent id="2453" img="2453" name="" species="Cat" profession="" replace="" />
+	<Agent id="2456" img="2456" name="" species="Cat" profession="" replace="" />
+	<Agent id="2457" img="2457" name="" species="Cat" profession="" replace="" />
+	<Agent id="2467" img="2467" name="" species="Cat" profession="" replace="" />
+	<Agent id="2468" img="2468" name="" species="Cat" profession="" replace="" />
+	<Agent id="2681" img="2681" name="" species="Cat" profession="" replace="" />
+	<Agent id="2701" img="2701" name="" species="Cat" profession="" replace="" />
+</data>
