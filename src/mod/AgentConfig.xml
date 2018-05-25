@@ -2,11 +2,8 @@
 <!--
 
 	id = Agents id(this file has all of them prefilled,more may need to be added as new agents get added).
-	name = Agents new name
-	species  = Agents new species
-	profession = Agents new profession
 	img = custom image name (placed in MittenRoster folder)
-	replace = 	replaces spesified string with the new name.
+	replace = 	replaces spesified string in agent description with the new name.
 				For example  <Agent id="2701" name="Catnip" replace="Lydia" />
 				would replace all occurances of "Lydia", in the agent description, with "Catnip"
 				This is only needed when changing agent names.
@@ -90,56 +87,56 @@
 
 -->
 <data>
-	<Agent id="113" img="113" name="" species="Cat" profession="" replace="" />
-	<Agent id="173" img="173" name="" species="Cat" profession="" replace="" />
-	<Agent id="174" img="174" name="" species="Cat" profession="" replace="" />
-	<Agent id="175" img="175" name="" species="Cat" profession="" replace="" />
-	<Agent id="179" img="179" name="" species="Red Panda" profession="" replace="" />
-	<Agent id="181" img="181" name="" species="Cat" profession="" replace="" />
-	<Agent id="204" img="204" name="" species="Cat" profession="" replace="" />
-	<Agent id="206" img="206"  name="" species="Sand Cat" profession="" replace="" />
-	<Agent id="207" img="207" name="" species="Cat" profession="" replace="" />
-	<Agent id="209" img="209" name="" species="Cat" profession="" replace="" />
-	<Agent id="211" img="211" name="" species="Cat" profession="" replace="" />
-	<Agent id="212" img="212" name="" species="Cat" profession="" replace="" />
-	<Agent id="213" img="213" name="" species="Cat" profession="" replace="" />
-	<Agent id="214" img="214" name="" species="Cat" profession="" replace="" />
-	<Agent id="215" img="215" name="" species="Cat" profession="" replace="" />
-	<Agent id="217" img="217" name="" species="Cat" profession="" replace="" />
-	<Agent id="218" img="218" name="" species="Cat" profession="" replace="" />
-	<Agent id="221" img="221" name="" species="Red Panda" profession="" replace="" />
-	<Agent id="223" img="223" name="" species="Dog" profession="" replace="" />
-	<Agent id="224" img="224" name="" species="Cat" profession="" replace="" />
-	<Agent id="225" img="225" name="" species="Cat" profession="" replace="" />
-	<Agent id="226" img="226" name="" species="Cat" profession="" replace="" />
-	<Agent id="227" img="227" name="" species="Cat" profession="" replace="" />
-	<Agent id="228" img="228" name="" species="Cat" profession="" replace="" />
-	<Agent id="229" img="229" name="" species="Cat" profession="" replace="" />
-	<Agent id="230" img="230" name="" species="Cat" profession="" replace="" />
-	<Agent id="231" img="231" name="" species="Cat" profession="" replace="" />
-	<Agent id="233" img="233" name="" species="Cat" profession="" replace="" />
-	<Agent id="234" img="234" name="" species="Cat" profession="" replace="" />
-	<Agent id="235" img="235" name="" species="Cat" profession="" replace="" />
-	<Agent id="236" img="236" name="" species="Cheetah" profession="" replace="" />
-	<Agent id="238" img="238" name="" species="Lion" profession="" replace="" />
-	<Agent id="239" img="239" name="" species="Cat" profession="" replace="" />
-	<Agent id="240" img="240" name="" species="Cat" profession="" replace="" />
-	<Agent id="241" img="241" name="" species="Cat" profession="" replace="" />
-	<Agent id="242" img="242" name="" species="Cat" profession="" replace="" />
-	<Agent id="244" img="244" name="" species="Cat" profession="" replace="" />
-	<Agent id="245" img="245" name="" species="Cat" profession="" replace="" />
-	<Agent id="246" img="246" name="" species="Cat" profession="" replace="" />
-	<Agent id="264" img="264" name="" species="Cat" profession="" replace="" />
-	<Agent id="2441" img="2441" name="" species="Cat" profession="" replace="" />
-	<Agent id="2446" img="2446" name="" species="Cheetah" profession="" replace="" />
-	<Agent id="2449" img="2449" name="" species="Cat" profession="" replace="" />
-	<Agent id="2451" img="2451" name="" species="Cat" profession="" replace="" />
-	<Agent id="2452" img="2452" name="" species="Fox" profession="" replace="" />
-	<Agent id="2453" img="2453" name="" species="Cat" profession="" replace="" />
-	<Agent id="2456" img="2456" name="" species="Cat" profession="" replace="" />
-	<Agent id="2457" img="2457" name="" species="Cat" profession="" replace="" />
-	<Agent id="2467" img="2467" name="" species="Cat" profession="" replace="" />
-	<Agent id="2468" img="2468" name="" species="Cat" profession="" replace="" />
-	<Agent id="2681" img="2681" name="" species="Cat" profession="" replace="" />
-	<Agent id="2701" img="2701" name="" species="Cat" profession="" replace="" />
+	<Agent id="113" img="113" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="173" img="173" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="174" img="174" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="175" img="175" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="179" img="179" name="" species="Red Panda" profession="" replace="" age=""  gender=""/>
+	<Agent id="181" img="181" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="204" img="204" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="206" img="206"  name="" species="Sand Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="207" img="207" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="209" img="209" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="211" img="211" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="212" img="212" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="213" img="213" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="214" img="214" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="215" img="215" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="217" img="217" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="218" img="218" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="221" img="221" name="" species="Red Panda" profession="" replace="" age=""  gender=""/>
+	<Agent id="223" img="223" name="" species="Dog" profession="" replace="" age=""  gender=""/>
+	<Agent id="224" img="224" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="225" img="225" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="226" img="226" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="227" img="227" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="228" img="228" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="229" img="229" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="230" img="230" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="231" img="231" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="233" img="233" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="234" img="234" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="235" img="235" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="236" img="236" name="" species="Cheetah" profession="" replace="" age=""  gender=""/>
+	<Agent id="238" img="238" name="" species="Lion" profession="" replace="" age=""  gender=""/>
+	<Agent id="239" img="239" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="240" img="240" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="241" img="241" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="242" img="242" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="244" img="244" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="245" img="245" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="246" img="246" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="264" img="264" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="2441" img="2441" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="2446" img="2446" name="" species="Cheetah" profession="" replace="" age=""  gender=""/>
+	<Agent id="2449" img="2449" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="2451" img="2451" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="2452" img="2452" name="" species="Fox" profession="" replace="" age=""  gender=""/>
+	<Agent id="2453" img="2453" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="2456" img="2456" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="2457" img="2457" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="2467" img="2467" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="2468" img="2468" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="2681" img="2681" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<Agent id="2701" img="2701" name="" species="Cat" profession="" replace="" age=""  gender=""/>
 </data>

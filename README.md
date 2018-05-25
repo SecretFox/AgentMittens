@@ -9,5 +9,5 @@ Replaces agent portraits with kittens.
 All images can be replaced by replacing the image files at MittenRoster folder.  
 When replacing images filetype has to be .png, and dimensions should be 200x200, although larger images may work too.  
 
-To change kittens name, profession,or species you can edit AgentConfig.xml file.
+To change kittens name, profession,age,gender or species you can edit AgentConfig.xml file.
 

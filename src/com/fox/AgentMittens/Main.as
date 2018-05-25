@@ -34,11 +34,14 @@ class com.fox.AgentMittens.Main {
 			for (var i:Number = 0; i < root.childNodes.length; i++ ) {
 				var agentNode = root.childNodes[i];
 				Mittens[agentNode.attributes.id] = new Object();
-				Mittens[agentNode.attributes.id]["Name"] = agentNode.attributes.name;
-				Mittens[agentNode.attributes.id]["Image"] = agentNode.attributes.img;
-				Mittens[agentNode.attributes.id]["Species"] = agentNode.attributes.species;
-				Mittens[agentNode.attributes.id]["Profession"] = agentNode.attributes.profession;
-				Mittens[agentNode.attributes.id]["Replacement"] = agentNode.attributes.descRepl;
+				if (agentNode.attributes.name) Mittens[agentNode.attributes.id]["Name"] = agentNode.attributes.name;
+				if (agentNode.attributes.img) Mittens[agentNode.attributes.id]["Image"] = agentNode.attributes.img;
+				if (agentNode.attributes.species) Mittens[agentNode.attributes.id]["Species"] = agentNode.attributes.species;
+				if (agentNode.attributes.profession) Mittens[agentNode.attributes.id]["Profession"] = agentNode.attributes.profession;
+				if (agentNode.attributes.replace) Mittens[agentNode.attributes.id]["Replace"] = agentNode.attributes.replace;
+				if (agentNode.attributes.age) Mittens[agentNode.attributes.id]["Age"] = agentNode.attributes.age;
+				if (agentNode.attributes.gender) Mittens[agentNode.attributes.id]["Gender"] = agentNode.attributes.gender;
+				
 			}
 		}
 		XMLFile = undefined;
@@ -119,6 +122,12 @@ class com.fox.AgentMittens.Main {
 							};
 							if (AgentObject["Profession"]) {
 								this.m_Species.m_Right.text = AgentObject["Profession"];
+							};
+							if (AgentObject["Age"]) {
+								this.m_Age.m_Right.text = AgentObject["Age"];
+							};
+							if (AgentObject["Gender"]) {
+								this.m_Gender.m_Right.text = AgentObject["Gender"];
 							};
 						}
 					}
