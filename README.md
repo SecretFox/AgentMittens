@@ -1,7 +1,7 @@
 # AgentMittens  
 [![alt text](https://i.imgur.com/812P61A.png "Download")](https://github.com/SecretFox/AgentMittens/releases)  
 Replaces agent portraits with kittens.  
-[![alt text](Roster.png "Roster")](https://github.com/SecretFox/AgentMittens/releases)  
+[![alt text](Roster.png "Roster")](https://raw.githubusercontent.com/SecretFox/AgentMittens/master/Roster.png)  
 **Install**  
 Unzip to `Secret World Legends\Data\Gui\Custom\Flash\` folder.
 	
