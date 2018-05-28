@@ -124,7 +124,7 @@ class com.fox.AgentMittens.Main {
 						this.m_Name.text = AgentObject["Name"];
 					};
 					if (AgentObject["Profession"]) {
-						this.m_Species.m_Right.text = AgentObject["Profession"];
+						this.m_Profession.m_Right.text = AgentObject["Profession"];
 					};
 					if (AgentObject["Age"]) {
 						this.m_Age.m_Right.text = AgentObject["Age"];
