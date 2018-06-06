@@ -61,7 +61,7 @@ class com.fox.AgentMittens.Main {
 						if (agentNode.attributes.id == infosheet.m_AgentData.m_AgentId){
 							for (var y in agentNode.childNodes){
 								var node:XMLNode = agentNode.childNodes[y];
-								if (node.nodeName == "desc") infosheet.m_Description.htmlText = node.firstChild.nodeValue
+								if (node.nodeName == "desc" && node.firstChild.nodeValue) infosheet.m_Description.htmlText = node.firstChild.nodeValue
 								if (node.nodeName == "traits"){
 									if (node.attributes.trait1Title)infosheet.m_Trait1Category.text = node.attributes.trait1Title;
 									if (node.attributes.trait1Text) infosheet.m_Trait1.text = node.attributes.trait1Text;
