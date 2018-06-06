@@ -58,13 +58,7 @@ class com.fox.AgentMittens.Main {
 				else if (agentNode.nodeName == "Desc"){
 					var infosheet = _root.agentsystem.m_Window.m_Content.m_AgentInfoSheet
 					if (AgentWindow.GetValue() && infosheet){
-						var id:Number;
-						for (var y in agentNode.childNodes){
-							if (agentNode.childNodes[y].nodeName == "id"){
-								id = agentNode.childNodes[y].firstChild.nodeValue;
-							}
-						}
-						if (id == infosheet.m_AgentData.m_AgentId){
+						if (agentNode.attributes.id == infosheet.m_AgentData.m_AgentId){
 							for (var y in agentNode.childNodes){
 								var node:XMLNode = agentNode.childNodes[y];
 								if (node.nodeName == "desc") infosheet.m_Description.htmlText = node.firstChild.nodeValue

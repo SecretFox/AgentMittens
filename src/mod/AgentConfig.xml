@@ -137,8 +137,7 @@
 	<Agent id="246" img="246" name="" species="Cat" profession="" replace="" age=""  gender=""/>
 	<Agent id="264" img="264" name="" species="Cat" profession="" replace="" age=""  gender=""/>
 	<!--
-	<Desc>
-		<id>264</id>
+	<Desc id="264">
 		<desc>Description text
 Second Line of description
 Third line</desc>
