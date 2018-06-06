@@ -136,6 +136,34 @@
 	<Agent id="245" img="245" name="" species="Cat" profession="" replace="" age=""  gender=""/>
 	<Agent id="246" img="246" name="" species="Cat" profession="" replace="" age=""  gender=""/>
 	<Agent id="264" img="264" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	<!--
+	<Desc>
+		<id>264</id>
+		<traits
+			trait1Title="Cute"
+			trait1Text="Feline Overlord"
+			trait1Tooltip="Cute cuddly kitten"
+			
+			trait2Title="Ferocious"
+			trait2Text="Claws"
+			trait2Tooltip="Mew"
+		/>
+		<passives
+			passiveName="Cat's Ferocity"
+			passiveAmount1="1000"
+			passiveText1="Cuteness"
+			passiveAmount2="980"
+			passiveText2="Fluffiness"
+		/>
+	</Desc>
+	-->
+	<Desc>
+		<id>215</id>
+		<desc>Subject is illusive, possessing the secrets of Rosicrucian Hermeticism (combination of alchemy, astrology, theurgy, and homunculi creation).
+Records of subject date back over a century. Conclusion: subject is either a persona passed down over generations or a cat of unnatural lifespan (Philosopher's Stone?). Some hypothesize that he or she creates a new body through an alchemical ritual, transferring the soul.
+Subject yearns for more information regarding the Secret World. Use this.
+		</desc>
+	</Desc>
 	
 	<Agent id="2441" img="2441" name="" species="Cat" profession="" replace="" age=""  gender=""/>
 	<Agent id="2446" img="2446" name="" species="Cheetah" profession="" replace="" age=""  gender=""/>
