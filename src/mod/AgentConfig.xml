@@ -17,7 +17,7 @@
 								replacedText|replacement
 							multiple entries can be separated with "#" e.g:
 								ghoul|dog#poet|rapper
-				name,species,profession,gender = self-explanatory
+				name,species,profession,gender,age = self-explanatory
 			</bio>
 			<desc>Agents desctiption
 When starting new line make sure that there aren't any tabs/spaces in front of the text</desc>
@@ -326,6 +326,7 @@ When starting new line make sure that there aren't any tabs/spaces in front of t
 			profession=""
 			replace=""
 			gender=""
+			age="1"
 		/>
 		<desc></desc>
 		<traits
