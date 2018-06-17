@@ -1,149 +1,336 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
-
-	id = Agents id(this file has all of them prefilled,more may need to be added as new agents get added).
-	img = custom image name (placed in MittenRoster folder)
-	replace = 	replaces spesified string in agent description with the new name.
-				For example  <Agent id="2701" name="Catnip" replace="Lydia" />
-				would replace all occurances of "Lydia", in the agent description, with "Catnip"
-				This is only needed when changing agent names.
+	XML Structure:
+	Faction recruit has all these pre-filled, so you can use that to test all the options(CTRL+F for 264).
+	To reload the change save the changes you made to this file and re-open the agents infosheet, no need for reloadui if you are not changing image or name.
+	All fields, except id, are optional, you can either leave unused ones empty(see faction recruit) or remove them completely(as i have done with other agents).
 		
-	Images can be placed on "MittenRoster" folder as png images, transparency should work.
-	Images should be 200x200 squares, although bigger images should work too, as long as you keep the aspect ratio.
-	Bigger images may load slower though.
-	
-	Some cat names you can use
-		Mittens
-		Muffin
-		Rusty
-		Max
-		Misty
-		Callie
-		Blacky
-		Zoe
-		Stripes
-		Whiskers
-		Pumpkin
-		Catnip
-		Bella
-		Coco
-		Tiger
-		Felix
-		Fluffy
-	
-	Current agent ID's
-		Jayesh Suresh 235
-		Nassir 175
-		Mihas Blaga 207
-		Roman Konstantinov 211
-		Martin Espina 217
-		Virgil 223
-		Lydia Darling 2701
-		Wekesa Ikande 2452
-		Liam Callahan 233
-		Wu Liang-Zhi 236
-		Lee Chung 240
-		Faction Recruit 264
-		Kwanele 2446
-		Hayden J. Montag 174
-		Petru 204
-		Aleksey Volkov 224
-		Dennis Masuhlo 2451
-		Siobhan Gowan 238
-		Lama Lhakpa 246
-		Ibrahim de la Fuente 221
-		Saenchai Khamsing 234
-		Carter 173
-		Aurélie 206
-		Carlos Peraza 213
-		Daniel Martinez 227
-		Cveta Stojanovic 230
-		Pierre Delacroix 245
-		Montgomery de la Roche 179
-		Amir 181
-		Calum MacLeod 212
-		Tiana Cardoza 218
-		Sarah Skelly 225
-		Queen Ranavalona IV 2453
-		Astrid Mikkelsen 239
-		Dax Reagan 242
-		Che Garcia Hansson 2441
-		Deputy Andy Gardener 113
-		Giovanni Bellanova 215
-		Mehmet Muzaffer 2449
-		Oleg Yablokov 2681
-		Thomas Grady 228
-		Alessandro Luzio IV 231
-		Terry Laputo 241
-		Victor Cromely 2467
-		Warlawurru 214
-		Aliya Zehhar 2456
-		Ann Thophora 2457
-		Maxwell Chandler 226
-		Christina Del Rio 229
-		Margot Crowley-Mathers 244
-		Mesilande Gwinyai 2468
-		Callie James 209
+		<Agent id = Agents id>
+			<bio>
+				img =	custom image name (placed in MittenRoster folder)
+						Images can be placed on "MittenRoster" folder as png images, transparency should work.
+						Images should be 200x200 squares, although bigger images should work too, as long as you keep the aspect ratio.
+						Bigger images may load slower though.
+						Leave file extension out.
+				replace =	Can be used to replace part of the agent description.
+							Usage: 
+								replacedText|replacement
+							multiple entries can be separated with "#" e.g:
+								ghoul|dog#poet|rapper
+				name,species,profession,gender = self-explanatory
+			</bio>
+			<desc>Agents desctiption
+When starting new line make sure that there aren't any tabs/spaces in front of the text</desc>
+			<traits
+				trait1Title = traits "title" e.g CHARISMA, DEXTERITY
+				trait1Text = traits name e.g "Faction Training", "Hex Magic"
+				trait1Tooltip = Traits tooltip,if left empty default tooltip will be used
 
+				trait2Title = same as above
+				trait2Text = same as above
+				trait2Tooltip = same as above
+			/>
+			<passives
+				passiveName = Agent support abilitys name e.g "Recruits teneacity", "Witch's Guile"
+				
+				passiveAmount1 = lvl 25 passive. Amount granted e.g "+1000"
+				passiveText1 = Which stat e.g "Fluffiness"
+				
+				passiveAmount2 = same as above, but lvl 50...
+				passiveText2 =  same as above, but lvl 50...
+			/>
+			</Agent>
 -->
 <data>
-	<Agent id="113" img="113" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="173" img="173" name="" species="Red Panda" profession="" replace="" age=""  gender=""/>
-	<Agent id="174" img="174" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="175" img="175" name="" species="Sand Cat" profession="" replace="" age=""  gender=""/>
-	
-	<Agent id="179" img="179" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="181" img="181" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="204" img="204" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="206" img="206"  name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	
-	<Agent id="207" img="207" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="209" img="209" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="211" img="211" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="212" img="212" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	
-	<Agent id="213" img="213" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="214" img="214" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="215" img="215" name="" species="Possibly Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="217" img="217" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	
-	<Agent id="218" img="218" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="221" img="221" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="223" img="223" name="" species="Dog" profession="" replace="" age=""  gender=""/>
-	<Agent id="224" img="224" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	
-	<Agent id="225" img="225" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="226" img="226" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="227" img="227" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="228" img="228" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	
-	<Agent id="229" img="229" name="" species="Cat" profession="Cat burglar" replace="" age=""  gender=""/>
-	<Agent id="230" img="230" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="231" img="231" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="233" img="233" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	
-	<Agent id="234" img="234" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="235" img="235" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="236" img="236" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="238" img="238" name="" species="Red Panda" profession="" replace="" age=""  gender=""/>
-	
-	<Agent id="239" img="239" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="240" img="240" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="241" img="241" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="242" img="242" name="" species="Fox" profession="" replace="" age=""  gender=""/>
-	
-	<Agent id="244" img="244" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="245" img="245" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="246" img="246" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="264" img="264" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<!--
-	<Desc id="264">
-		<desc>Description text
-Second Line of description
-Third line</desc>
+	<Agent id="113">
+		<!-- Deputy Andy Gardener -->
+		<bio
+			img="113"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="173">
+		<!-- Carter -->
+		<bio
+			img="173"
+			species="Red Panda"
+		/>
+	</Agent>
+	<Agent id="174">
+		<!-- Hayden J. Montag -->
+		<bio
+			img="174"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="175">
+		<!-- Nassir -->
+		<bio
+			img="175"
+			species="Sand Cat"
+		/>
+	</Agent>
+	<Agent id="179">
+		<!-- Montgomery de la Roche -->
+		<bio
+			img="179"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="181">
+		<!-- Amir -->
+		<bio
+			img="181"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="204">
+		<!-- Petru -->
+		<bio
+			img="204"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="206">
+		<!-- Aurélie -->
+		<bio
+			img="206"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="207">
+		<!-- Mihas Blaga -->
+		<bio
+			img="207"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="209">
+		<!-- Callie James -->
+		<bio
+			img="209"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="211">
+		<!-- Roman Konstantinov -->
+		<bio
+			img="211"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="212">
+		<!-- Calum MacLeod -->
+		<bio
+			img="212"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="213">
+		<!-- Carlos Peraza -->
+		<bio
+			img="213"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="214">
+		<!-- Warlawurru -->
+		<bio
+			img="214"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="215">
+		<!-- Giovanni Bellanova -->
+		<bio
+			img="215"
+			species="Possibly Cat"
+		/>
+	</Agent>
+	<Agent id="217">
+		<!-- Martin Espina -->
+		<bio
+			img="217"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="218">
+		<!-- Tiana Cardoza -->
+		<bio
+			img="218"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="221">
+		<!-- Ibrahim de la Fuente -->
+		<bio
+			img="221"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="223">
+		<!-- Virgil -->
+		<bio
+			img="223"
+			species="Dog"
+			replace="ghoul|dog"
+		/>
+	</Agent>
+	<Agent id="224">
+		<!-- Aleksey Volkov -->
+		<bio
+			img="224"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="225">
+		<!-- Sarah Skelly -->
+		<bio
+			img="225"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="226">
+		<!-- Maxwell Chandler -->
+		<bio
+			img="226"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="227">
+		<!-- Daniel Martinez -->
+		<bio
+			img="227"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="228">
+		<!-- Thomas Grady -->
+		<bio
+			img="228"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="229">
+		<!-- Christina Del Rio -->
+		<bio
+			img="229"
+			species="Cat"
+			profession="Cat burglar"
+		/>
+	</Agent>
+	<Agent id="230">
+		<!-- Cveta Stojanovic -->
+		<bio
+			img="230"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="231">
+		<!-- Alessandro Luzio IV -->
+		<bio
+			img="231"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="233">
+		<!-- Liam Callahan -->
+		<bio
+			img="233"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="234">
+		<!-- Saenchai Khamsing -->
+		<bio
+			img="234"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="235">
+		<!-- Jayesh Suresh -->
+		<bio
+			img="235"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="236">
+		<!-- Wu Liang-Zhi -->
+		<bio
+			img="236"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="238">
+		<!-- Siobhan Gowan -->
+		<bio
+			img="238"
+			species="Red Panda"
+		/>
+	</Agent>
+	<Agent id="239">
+		<!-- Astrid Mikkelsen -->
+		<bio
+			img="239"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="240">
+		<!-- Lee Chung -->
+		<bio
+			img="240"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="241">
+		<!-- Terry Laputo -->
+		<bio
+			img="241"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="242">
+		<!-- Dax Reagan -->
+		<bio
+			img="242"
+			species="Fox"
+		/>
+	</Agent>
+	<Agent id="244">
+		<!-- Margot Crowley-Mathers -->
+		<bio
+			img="244"
+			species="Cat"
+		/>
+	</Agent>>
+	<Agent id="245">
+		<!-- Pierre Delacroix -->
+		<bio
+			img="245"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="246">
+		<!-- Lama Lhakpa -->
+		<bio
+			img="246"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="264">
+		<!-- Faction Recruit -->
+		<bio
+			img="264"
+			species="Cat"
+			name=""
+			profession=""
+			replace=""
+			gender=""
+		/>
+		<desc></desc>
 		<traits
-			trait1Title="Power"
-			trait1Text="Feline Overlord"
+			trait1Title=""
+			trait1Text=""
 			trait1Tooltip=""
 
 			trait2Title=""
@@ -151,27 +338,95 @@ Third line</desc>
 			trait2Tooltip=""
 		/>
 		<passives
-			passiveName="Cat's Ferocity"
-			passiveAmount1="1000"
-			passiveText1="Cuteness"
-			passiveAmount2="980"
-			passiveText2="Fluffiness"
+			passiveName=""
+			passiveAmount1=""
+			passiveText1=""
+			passiveAmount2=""
+			passiveText2=""
 		/>
-	</Desc>
-	-->
-	
-	<Agent id="2441" img="2441" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="2446" img="2446" name="" species="Cheetah" profession="" replace="" age=""  gender=""/>
-	<Agent id="2449" img="2449" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="2451" img="2451" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	
-	<Agent id="2452" img="2452" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="2453" img="2453" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="2456" img="2456" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="2457" img="2457" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	
-	<Agent id="2467" img="2467" name="" species="Cheetah" profession="" replace="" age=""  gender=""/>
-	<Agent id="2468" img="2468" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="2681" img="2681" name="" species="Cat" profession="" replace="" age=""  gender=""/>
-	<Agent id="2701" img="2701" name="" species="Cat" profession="" replace="" age=""  gender=""/>
+	</Agent>
+	<Agent id="2441">
+		<!-- Che Garcia Hansson -->
+		<bio
+			img="2441"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2446">
+		<!-- Kwanele -->
+		<bio
+			img="2446"
+			species="Cheetah"
+		/>
+	</Agent>
+	<Agent id="2449">
+		<!-- Mehmet Muzaffer -->
+		<bio
+			img="2449"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2451">
+		<!-- Dennis Masuhlo  -->
+		<bio
+			img="2451"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2452">
+		<!-- Wekesa Ikande -->
+		<bio
+			img="2452"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2453">
+		<!-- Queen Ranavalona IV -->
+		<bio
+			img="2453"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2456">
+		<!-- Aliya Zehhar -->
+		<bio
+			img="2456"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2457">
+		<!-- Ann Thophora -->
+		<bio
+			img="2457"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2467">
+		<!-- Victor Cromely -->
+		<bio
+			img="2467"
+			species="Cheetah"
+		/>
+	</Agent>
+	<Agent id="2468">
+		<!-- Mesilande Gwinyai -->
+		<bio
+			img="2468"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2681">
+		<!-- Oleg Yablokov -->
+		<bio
+			img="2681"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2701">
+		<!-- Lydia Darling -->
+		<bio
+			img="2701"
+			species="Cat"
+		/>
+	</Agent>
 </data>
