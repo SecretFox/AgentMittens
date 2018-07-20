@@ -266,6 +266,7 @@ When starting new line make sure that there aren't any tabs/spaces in front of t
 		<bio
 			img="238"
 			species="Red Panda"
+			replace="faerie|panda"
 		/>
 	</Agent>
 	<Agent id="239">
@@ -326,7 +327,7 @@ When starting new line make sure that there aren't any tabs/spaces in front of t
 			profession=""
 			replace=""
 			gender=""
-			age="1"
+			age=""
 		/>
 		<desc></desc>
 		<traits
@@ -427,6 +428,27 @@ When starting new line make sure that there aren't any tabs/spaces in front of t
 		<!-- Lydia Darling -->
 		<bio
 			img="2701"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2722">
+		<!-- Dae-Su -->
+		<bio
+			img="2722"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2721">
+		<!-- Brigadier Lethe -->
+		<bio
+			img="2721"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2723">
+		<!-- De La Guardia -->
+		<bio
+			img="2723"
 			species="Cat"
 		/>
 	</Agent>

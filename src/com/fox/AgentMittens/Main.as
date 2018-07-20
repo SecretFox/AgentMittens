@@ -21,7 +21,7 @@ class com.fox.AgentMittens.Main {
 		Mittens = new Object();
 		LoadConfig();
 		AgentWindow = DistributedValue.Create("agentSystem_window");
-
+		if (!_global.com.fox.AgentMittens.Hooked) _global.com.fox.AgentMittens.Hooked = false;
 	}
 	private function LoadConfig() {
 		XMLFile = new XML();
@@ -130,9 +130,9 @@ class com.fox.AgentMittens.Main {
 			setTimeout(Delegate.create(this, Hook), 50);
 			return
 		}
-		if (!_global.GUI.AgentSystem.RosterIcon.prototype._LoadPortrait) {
-			_global.GUI.AgentSystem.RosterIcon.prototype._LoadPortrait = _global.GUI.AgentSystem.RosterIcon.prototype.LoadPortrait;
-			_global.GUI.AgentSystem.RosterIcon.prototype.LoadPortrait = function ():Void {
+		if (_global.com.fox.AgentMittens.Hooked == false){
+			_global.com.fox.AgentMittens.Hooked = true;
+			var f:Function = function() {
 				if (Main.Mittens[string(this.data.m_AgentId)]["Image"]) {
 					var newPortrait = com.Utils.Format.Printf( "rdb:%.0f:%.0f", _global.Enums.RDBID.e_RDB_Res_AgentPortraits, this.data.m_AgentId);
 					if (newPortrait == this.m_PortraitPath) return;
@@ -147,10 +147,11 @@ class com.fox.AgentMittens.Main {
 					this.m_PortraitPath = newPortrait;
 					this.m_PortraitLoader.loadClip(path, this.m_PortraitClip);
 				} else{
-					this._LoadPortrait();
+					arguments.callee.base.apply(this, arguments);
 				}
-			}
-			//First run, change the icons that were loaded before LoadPortrait was hooked
+			};
+			f.base = _global.GUI.AgentSystem.RosterIcon.prototype.LoadPortrait;
+			_global.GUI.AgentSystem.RosterIcon.prototype.LoadPortrait = f;
 			for (var i in _root.agentsystem.m_Window.m_Content.m_Roster) {
 				var agentIcon:MovieClip = _root.agentsystem.m_Window.m_Content.m_Roster[i];
 				if (Mittens[string(agentIcon.data.m_AgentId)]) {
@@ -160,34 +161,34 @@ class com.fox.AgentMittens.Main {
 					if (Main.Mittens[string(agentIcon.data.m_AgentId)]["Name"]) agentIcon.m_Name.text = Mittens[string(agentIcon.data.m_AgentId)]["Name"];
 				}
 			}
-		}
-		if (!_global.GUI.AgentSystem.RosterIcon.prototype._setData) {
-			_global.GUI.AgentSystem.RosterIcon.prototype._setData = _global.GUI.AgentSystem.RosterIcon.prototype.setData;
-			_global.GUI.AgentSystem.RosterIcon.prototype.setData = function(data:AgentSystemAgent) {
-				this._setData(data);
+			
+			f = function(data:AgentSystemAgent) {
+				arguments.callee.base.apply(this, arguments);
 				if (Main.Mittens[string(data.m_AgentId)]["Name"]) this.m_Name.text = Main.Mittens[string(data.m_AgentId)]["Name"]
-				}
-		}
-		if (!_global.GUI.AgentSystem.MissionReward.prototype._AssignAgent) {
-			_global.GUI.AgentSystem.MissionReward.prototype._AssignAgent = _global.GUI.AgentSystem.MissionReward.prototype.AssignAgent;
-			_global.GUI.AgentSystem.MissionReward.prototype.AssignAgent = function(agent:AgentSystemAgent) {
-				this._AssignAgent(agent)
+			};
+			f.base = _global.GUI.AgentSystem.RosterIcon.prototype.setData;
+			_global.GUI.AgentSystem.RosterIcon.prototype.setData = f;
+			
+			f = function(agent:AgentSystemAgent) {
+				arguments.callee.base.apply(this, arguments);
 				if (Main.Mittens[string(agent.m_AgentId)]["Name"]) this.m_AgentName.text = Main.Mittens[string(agent.m_AgentId)]["Name"];
-			}
-		}
-		if (!_global.GUI.AgentSystem.MissionDetail.prototype._UpdateAgentDisplay) {
-			_global.GUI.AgentSystem.MissionDetail.prototype._UpdateAgentDisplay = _global.GUI.AgentSystem.MissionDetail.prototype.UpdateAgentDisplay;
-			_global.GUI.AgentSystem.MissionDetail.prototype.UpdateAgentDisplay = function() {
-				this._UpdateAgentDisplay();
+			};
+			f.base = _global.GUI.AgentSystem.MissionReward.prototype.AssignAgent ;
+			_global.GUI.AgentSystem.MissionReward.prototype.AssignAgent  = f;
+			
+			f = function() {
+				arguments.callee.base.apply(this, arguments);
 				if (Main.Mittens[string(this.m_AgentData.m_AgentId)]["Name"]) this.m_AgentName.text = Main.Mittens[string(this.m_AgentData.m_AgentId)]["Name"];
-			}
-		}
-		if (!_global.GUI.AgentSystem.AgentInfo.prototype._SetData) {
-			_global.GUI.AgentSystem.AgentInfo.prototype._SetData = _global.GUI.AgentSystem.AgentInfo.prototype.SetData;
-			_global.GUI.AgentSystem.AgentInfo.prototype.SetData = function(agentData:AgentSystemAgent) {
-				this._SetData(agentData);
-				if(Main.Mittens[string(agentData.m_AgentId)])Main.UpdateDescription();
-			}
+			};
+			f.base = _global.GUI.AgentSystem.MissionDetail.prototype.UpdateAgentDisplay;
+			_global.GUI.AgentSystem.MissionDetail.prototype.UpdateAgentDisplay = f;
+			
+			f = function(agentData:AgentSystemAgent) {
+				arguments.callee.base.apply(this, arguments);
+				if (Main.Mittens[string(agentData.m_AgentId)]) Main.UpdateDescription();
+			};
+			f.base = _global.GUI.AgentSystem.AgentInfo.prototype.SetData;
+			_global.GUI.AgentSystem.AgentInfo.prototype.SetData = f;
 		}
 	}
 }
