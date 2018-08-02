@@ -452,4 +452,11 @@ When starting new line make sure that there aren't any tabs/spaces in front of t
 			species="Cat"
 		/>
 	</Agent>
+	<Agent id="2761">
+		<!-- Jack Boone -->
+		<bio
+			img="2761"
+			species="Cat"
+		/>
+	</Agent>
 </data>
