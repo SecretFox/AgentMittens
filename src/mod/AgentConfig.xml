@@ -459,4 +459,85 @@ When starting new line make sure that there aren't any tabs/spaces in front of t
 			species="Cat"
 		/>
 	</Agent>
+	
+	<Agent id="2743">
+		<!-- Laughing Jenny -->
+		<bio
+			img="2743"
+			species="Cat"
+		/>
+	</Agent>
+	
+	<Agent id="2746">
+		<!-- Nuala Magorian -->
+		<bio
+			img="2746"
+			species="Cat"
+		/>
+	</Agent>
+	
+	<Agent id="2750">
+		<!-- Lady of Mists-->
+		<bio
+			img="2750"
+			species="Snow Leopard"
+			replace="fay women|leopard"
+		/>
+	</Agent>
+	<Agent id="2745">
+		<!-- Amelia Bindings -->
+		<bio
+			img="2745"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2749">
+		<!-- Fearghas Abernathy -->
+		<bio
+			img="2749"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2747">
+		<!-- Lynch -->
+		<bio
+			img="2747"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2791">
+		<!-- Jerónimo de Montejo -->
+		<bio
+			img="2791"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2744">
+		<!-- Francis Rowan -->
+		<bio
+			img="2744"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2741">
+		<!-- Sif Minervudottir -->
+		<bio
+			img="2741"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2742">
+		<!-- Finn Mulligan -->
+		<bio
+			img="2742"
+			species="Cat"
+		/>
+	</Agent>
+	<Agent id="2748">
+		<!-- Brann Mac Diarmada -->
+		<bio
+			img="2748"
+			species="Cat"
+		/>
+	</Agent>
 </data>
